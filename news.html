@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <!-- Inline CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .news-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .news-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .news-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .news-content h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .news-content p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .news-content .caption {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .back-to-top {
+            text-align: center;
+            margin: 20px;
+        }
+        .back-to-top button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-top button:hover {
+            background-color: #555;
+        }
+        .back-to-top button:active {
+            background-color: #222;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .news-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .news-item img {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .news-content h2 {
+                font-size: 1.25rem;
+            }
+            .news-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sports News</h1>
+
+    <!-- News Container -->
+    <div class="news-container">
+        <!-- News Item 1 -->
+        <div class="news-item">
+            <img src="images/6.jpg" alt="News Image 1">
+            <div class="news-content">
+                <h2>Football: Team Wins Championship</h2>
+                <p>In an exhilarating match, Team A clinched the championship title with a last-minute goal. Fans celebrated wildly as the team lifted the trophy.</p>
+                <p class="caption">Lebron James is the First NBA player to score from 10 points clear on top</p>
+            </div>
+        </div>
+
+        <!-- News Item 2 -->
+        <div class="news-item">
+            <img src="images/5.jpg" alt="News Image 2">
+            <div class="news-content">
+                <h2>Basketball: Star Player Sets New Record</h2>
+                <p>John Doe scored 50 points in a single game, breaking the previous record. His performance has been hailed as one of the best in league history.</p>
+                <p class="caption">He also leads the second on the race of the most wins in the NBA history</p>
+            </div>
+        </div>
+
+        <!-- News Item 3 -->
+        <div class="news-item">
+            <img src="images/3.jpg" alt="News Image 3">
+            <div class="news-content">
+                <h2>MLS SOCCER:Fabrizio Romano</h2>
+                <p>🚨🇺🇸 Leo Messi: “MLS is GROWING a lot as a league, totally in line with United States culture”.
+
+                    “The league is evolving, developing a lot. I hope it will continue with more clubs to follow Inter Miami’s example”.</p>
+                <p class="caption">Messi Might retun to Barcer with immediate effect of getting to know his new Team Mates</p>
+            </div>
+        </div>
+
+        <!-- News Item 4 -->
+        <div class="news-item">
+            <img src="Images/4.jpg" alt="News Image 4">
+            <div class="news-content">
+                <h2>Fabrizio Romano:</h2>
+                <p>🚨💣💣 Antony: “It’s TRUE, I almost signed for Liverpool before joining Man United”.
+
+                    “I went to Manchester and had incredible moments there. It was a good choice too”, told Kooora.</p>
+                <p class="caption">Antony Makes a shocking move to Real Betis dreaming of meeting real madrid Clash against them in the next 24HRS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+       <a href="home.html"> <button>back to Home Page</button></a>
+    </div>
+
+    <!-- JavaScript for Back to Top Button -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
